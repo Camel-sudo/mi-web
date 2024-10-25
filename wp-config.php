@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'web1' );
+define( 'DB_NAME', 'mi-web' );
 
 /** Database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'administrador' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'abc123.' );
+define( 'DB_PASSWORD', 'administrador' );
 
 /** Database hostname */
 define( 'DB_HOST', 'mariadb' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'I_7#wO3o1Z|2=Z-/ }}vic WOW`F,oC [:i%MkN}(s5%VqoC[&(F1W)RvK%dJmH@' );
-define( 'SECURE_AUTH_KEY',  'nxj<=f]MxcWQOyoSjP=.n<J,6DXe0Wg!,7?ra^=(4B_6$8}]zTHbB4+B;^.H}x<z' );
-define( 'LOGGED_IN_KEY',    '%L3759*@2olg~|zSJd2==U!ULj?StYhP^3|]A@S`)>Wf|2v64wa>uBHoCUG^0Qr=' );
-define( 'NONCE_KEY',        'QU[L8SL;qm6&R4G|U;c5aYg5!q|%Qu+D!/GR]:MAq$|jp3`.)p6V*yp1gZ:q^~ao' );
-define( 'AUTH_SALT',        '=7UOz.(#CMF18B!6~Q-B00G!>K%Q3Z*3,:)%s))J8H,P>M}WF0F}9332a!1./|54' );
-define( 'SECURE_AUTH_SALT', 'bA+r!wCg]k~]8Ro;16@Ngy@7bI6Sf,=AeE;j=&7Th4Z{au8Yv;?J=.37H&LX>rq5' );
-define( 'LOGGED_IN_SALT',   '7GAqwglX(de@RUg^RYZ-d9juz~{^2mmuCxRNR.nvroj@V9$aFMroRAaxkuHhNLAz' );
-define( 'NONCE_SALT',       'U9im418$<J]`uuLtnN*dN6B7W0*LF$OBbD;nFd-+jV^%[7J8QN~y-q$t/eA;>1gS' );
+define( 'AUTH_KEY',         '^gs1=j1vJ.|s9;.ZGZ7-6$a=X1O2R9}:`^GqmQ2sr]#;qjsa=5N~N]Xd`3!tI0U9' );
+define( 'SECURE_AUTH_KEY',  'CRf(})4H[#*x]/&L>.p#b| K9Pv8oaT}.{lt`vP}wN!_=O>U2N%to-k[;#K3NMj,' );
+define( 'LOGGED_IN_KEY',    'cPsj6y;GUBc%~:,X+c<n-31u(r-UdeqY:Ps9 psdaCvYV31:e!CtP2JPkB-K$@[z' );
+define( 'NONCE_KEY',        'u}]bb&kVIqu5*eR]*SwG N4s3fR!;0H^@vH@:&(6hO].oBKpNjwz[i$aL(M:uM@b' );
+define( 'AUTH_SALT',        ')Dm.36.ll8-&xhP ryq`!}T*{A=0e@$X7>)AwdcB[JCq0< /d]=tC0._!?V9!IPY' );
+define( 'SECURE_AUTH_SALT', 'jc._((8kCUns,Zke`j}lna5q$gmop0~F^NWz_AdId/y/{A-lq5I~?.yPH?Q#nJ P' );
+define( 'LOGGED_IN_SALT',   '=<}v7{~VaqvK-e{?rPmE@(45K_K:s7=I&en2`l_:ki64X~D~Hfl?Th.,eF@:uS#o' );
+define( 'NONCE_SALT',       'XlIV1>y@qq{%Il#<#h]marxTR#W(+^CS$6V=%3<uIC)tNV&L+r:.HA, nv8N3CId' );
 
 /**#@-*/
 
