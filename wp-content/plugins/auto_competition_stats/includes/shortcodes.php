@@ -1,5 +1,4 @@
 <?php
-
 function acs_display_random_cars() {
     global $wpdb;
     $table_name = $wpdb->prefix . 'acs_car_stats';
@@ -79,11 +78,11 @@ function acs_display_add_car_form() {
             <label>URL de la Imagen:</label>
             <input type="text" name="image_url" placeholder="http://example.com/image.jpg">
             <br><br>
-            <button type="submit" class="button button-primary">Añadir Coche</button>
+            <button type="submit" class="button button-primary">Guardar</button>
         </form>
     </div>
     <?php
-    return ob_get_clean(); // Devolver el contenido del buffer
+    return ob_get_clean(); // Retornar el contenido del buffer
 }
 add_shortcode('add_car_form', 'acs_display_add_car_form');
 ?>

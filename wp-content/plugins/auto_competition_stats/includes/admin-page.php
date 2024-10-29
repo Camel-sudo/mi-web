@@ -4,6 +4,7 @@ function acs_options_page() {
     $table_name = $wpdb->prefix . 'acs_car_stats';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        // Aquí se maneja el formulario existente para añadir coches
         $model = sanitize_text_field($_POST['model']);
         $competition_history = sanitize_textarea_field($_POST['competition_history']);
         $technical_specifications = sanitize_textarea_field($_POST['technical_specifications']);
@@ -48,4 +49,3 @@ function acs_options_page() {
     </div>
     <?php
 }
-?>
