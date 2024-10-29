@@ -2,7 +2,7 @@
 /*
 Plugin Name: Auto Competition Stats
 Description: Plugin para mostrar información de coches en algunas competiciones de automovilismo.
-Version: 1.0
+Version: 1.1
 Author: Ruben y Diego
 */
 
@@ -23,6 +23,7 @@ function acs_create_tables() {
         competition_history text NOT NULL,
         technical_specifications text NOT NULL,
         success_statistics text NOT NULL,
+        image_url text DEFAULT NULL,  // Nueva columna para la URL de la imagen
         PRIMARY KEY (id)
     ) $charset_collate;";
 
