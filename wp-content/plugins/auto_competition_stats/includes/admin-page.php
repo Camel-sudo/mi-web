@@ -1,50 +1,36 @@
-<?php 
+<?php    
 function acs_options_page() {
     global $wpdb;
     $table_name = $wpdb->prefix . 'acs_car_stats';
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $model = sanitize_text_field($_POST['model']);
-        $competition_history = sanitize_textarea_field($_POST['competition_history']);
-        $technical_specifications = sanitize_textarea_field($_POST['technical_specifications']);
-        $success_statistics = sanitize_textarea_field($_POST['success_statistics']);
-        $image_url = esc_url_raw($_POST['image_url']);  // Nueva variable para la URL de la imagen
-
-        // Insertar en la base de datos
-        $wpdb->insert(
-            $table_name,
-            array(
-                'model' => $model,
-                'competition_history' => $competition_history,
-                'technical_specifications' => $technical_specifications,
-                'success_statistics' => $success_statistics,
-                'image_url' => $image_url  // Almacenar la URL de la imagen
-            )
-        );
-        echo "<div class='updated'><p>Datos guardados correctamente.</p></div>";
-    }
-
+    $cars = $wpdb->get_results("SELECT * FROM $table_name ORDER BY RAND() LIMIT 3");
     ?>
     <div class="wrap">
-        <h1>Añadir Información de Competición de Coches</h1>
-        <form method="POST">
-            <label>Modelo del Coche:</label>
-            <input type="text" name="model" required>
-            <br><br>
-            <label>Historial de Competiciones:</label>
-            <textarea name="competition_history" required></textarea>
-            <br><br>
-            <label>Ficha Técnica:</label>
-            <textarea name="technical_specifications" required></textarea>
-            <br><br>
-            <label>Estadísticas de Éxitos:</label>
-            <textarea name="success_statistics" required></textarea>
-            <br><br>
-            <label>URL de la Imagen:</label>
-            <input type="text" name="image_url" placeholder="http://example.com/image.jpg">
-            <br><br>
-            <button type="submit" class="button button-primary">Guardar</button>
-        </form>
+        <h1>Muestreo de Coches</h1>
+        <div class="car-gallery" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 50px;">
+            <div class="cards-container" style="display: flex; flex-wrap: wrap; gap: 50px; justify-content: center;">
+                <?php
+                if ($cars) {
+                    foreach ($cars as $car) {
+                        echo '<div class="card" style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; width: 500px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">';
+                        if ($car->image_url) {
+                            echo "<img src='{$car->image_url}' alt='{$car->model}' style='width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;' />";
+                        }
+                        echo "<h2 style='font-weight: bold; font-size: 40px;'>{$car->model}</h2> <!-- Modelo en negrita y tamaño aumentado -->
+                              <h3>Historial de Competiciones</h3>
+                              <p>{$car->competition_history}</p>
+                              <h3>Ficha Técnica</h3>
+                              <p>{$car->technical_specifications}</p>
+                              <h3>Estadísticas de Éxitos</h3>
+                              <p>{$car->success_statistics}</p>
+                              </div>";
+                    }
+                } else {
+                    echo "<p>No se encontraron coches.</p>";
+                }
+                ?>
+            </div>
+        </div>
     </div>
     <?php
 }

@@ -23,7 +23,7 @@ function acs_create_tables() {
         competition_history text NOT NULL,
         technical_specifications text NOT NULL,
         success_statistics text NOT NULL,
-        image_url text DEFAULT NULL,  // Nueva columna para la URL de la imagen
+        image_url text DEFAULT NULL,
         PRIMARY KEY (id)
     ) $charset_collate;";
 
