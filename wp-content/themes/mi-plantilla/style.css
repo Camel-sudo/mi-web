@@ -1,43 +1,36 @@
-
-
-/* Estilos para el encabezado */
 header {
     padding: 20px;
     background-color: #f8f9fa;
-    width: 100%; /* El encabezado ocupa todo el ancho */
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección principal */
 #main {
-    flex-grow: 1; /* Permite que la sección principal crezca y ocupe el espacio disponible */
+    flex-grow: 1;
     padding: 20px;
 }
 
-/* Sidebar */
 #sidebar {
-    width: 250px; /* Ancho fijo para la barra lateral */
-    position: fixed; /* Fija la sidebar a la pantalla */
-    top: 0; /* La sidebar comienza desde la parte superior */
-    right: 0; /* Alineada a la derecha */
-    height: 100%; /* Altura completa de la pantalla */
-    overflow-y: auto; /* Permite el desplazamiento si el contenido es mayor que la pantalla */
-    background-color: #f1f1f1; /* Fondo claro para la sidebar */
-    padding: 20px; /* Espaciado interno */
-    border-left: 1px solid #ccc; /* Línea de separación */
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
 }
 
-/* Estilo para el footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #f8f9fa;
-    width: 100%; /* El pie ocupa todo el ancho */
+    width: 100%;
 }
 
-/* Estilo para los elementos del menú */
 .menu {
-    list-style-type: none; /* Sin puntos en la lista */
+    list-style-type: none;
     padding: 0;
 }
 
@@ -47,16 +40,15 @@ footer {
 }
 
 .menu-item a {
-    text-decoration: none; /* Sin subrayado */
-    color: #007bff; /* Color azul para los enlaces */
+    text-decoration: none;
+    color: #007bff;
 }
 
 .menu-item a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón */
+    text-decoration: underline;
 }
 
-/* Estilos para imágenes */
 img {
-    max-width: 100rem; /* Las imágenes no exceden el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100rem;
+    height: auto;
 }
