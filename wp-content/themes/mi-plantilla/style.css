@@ -57,6 +57,6 @@ footer {
 
 /* Estilos para imágenes */
 img {
-    max-width: 100%; /* Las imágenes no exceden el ancho del contenedor */
+    max-width: 100rem; /* Las imágenes no exceden el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
 }
