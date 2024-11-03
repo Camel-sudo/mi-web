@@ -6,8 +6,6 @@
 -- Tiempo de generación: 03-11-2024 a las 14:37:17
 -- Versión del servidor: 10.6.19-MariaDB
 -- Versión de PHP: 8.2.24
-create database `mi-web`;
-use `mi-web`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,6 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `wp_acs_car_stats`
 --
+
+create database `mi-web`;
+use `mi-web`;
 
 CREATE TABLE `wp_acs_car_stats` (
   `id` mediumint(9) NOT NULL,
