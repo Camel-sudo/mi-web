@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 <section id="main">
-    <h1>Hola gente</h1>
     <img src="<?php echo get_template_directory_uri(); ?>/images/volkswagen_corrado_vr6_9.jpg" alt="FERNANDO ALONSO">
-    <?php   echo do_shortcode('[random_cars]'); ?>
+    <!-- <?php   echo do_shortcode('[random_cars]'); ?> -->
 </section> <!-- Fin de main -->
 <?php get_sidebar()?>
 <?php get_footer(); ?>

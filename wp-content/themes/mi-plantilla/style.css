@@ -1,86 +1,22 @@
-/*
-Theme Name: Tema de Ruben y Diego
-Description: Este es un tema personalizado.
-Author: Ruben-Diego
-Version:1.0
-*/
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#container {
+    display: flex;
+    width: 100%;
 }
 
-body {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Contenedor principal */
 #main {
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 20px 20px 20px 0;
 }
 
-/* Encabezado de entrada */
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-h2 a {
-    color: #333;
-    text-decoration: none;
-}
-
-h2 a:hover {
-    color: #0073e6;
-}
-
-/* Metadatos de la entrada */
-small {
-    font-size: 0.9em;
-    color: #888;
-}
-
-/* Miniatura de la entrada */
-.thumbnail {
-    margin: 10px 0;
-    text-align: center;
-}
-
-.thumbnail img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Extracto de la entrada */
-.excerpt {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #666;
-}
-
-/* Barra lateral */
 #sidebar {
-    width: 25%;
+    width: 250px;
     padding: 20px;
     background-color: #f1f1f1;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    float: right;
     margin-top: 20px;
 }
 
-/* Pie de página */
 #footer {
     clear: both;
     text-align: center;
@@ -93,7 +29,6 @@ small {
     margin-top: 20px;
 }
 
-/* Estilos adicionales */
 p {
     margin-bottom: 15px;
 }
@@ -106,6 +41,17 @@ a {
 a:hover {
     color: #005bb5;
 }
-section img{
-    
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
